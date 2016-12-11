@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');?>
             <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <span class="mdl-layout-title">TO-TO-DO Dashboard</span>
-                <?php 	echo form_open('login/logout');?>
+                <?php 	echo form_open('Login/logout');?>
                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
                  style="position: fixed; top:2%;right:4%; z-index:1;">
                             <i class="material-icons">exit_to_app</i>LOGOUT </button>

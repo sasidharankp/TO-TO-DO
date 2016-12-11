@@ -12,8 +12,8 @@ class Login extends CI_Controller {
 	{	
         $username= ($this->input->post('Username'));
         $password= ($this->input->post('Password'));
-		$this->load->model('membership_model');
-		$query = $this->membership_model->validate();
+		$this->load->model('Membership_model');
+		$query = $this->Membership_model->validate();
 		
 		if($query) // if the user's credentials validated...
 		{
@@ -22,7 +22,7 @@ class Login extends CI_Controller {
 				'is_logged_in' => true
 			);
 			$this->session->set_userdata($data);
-			redirect('site/members_area');
+			redirect('Site/members_area');
 		}
 		else // incorrect username or password
 		{
@@ -56,9 +56,9 @@ class Login extends CI_Controller {
 		
 		else
 		{			
-			$this->load->model('membership_model');
+			$this->load->model('Membership_model');
 			
-			if($query = $this->membership_model->create_member())
+			if($query = $this->Membership_model->create_member())
 			{
 				$data['main_content'] = 'signup_successful';
 				$this->load->view('includes/template', $data);

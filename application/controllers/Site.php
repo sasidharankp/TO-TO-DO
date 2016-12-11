@@ -10,7 +10,7 @@ class Site extends CI_Controller
     
 	function members_area()
 	{
-		redirect('dashboard_controller/view_task');
+		redirect('Dashboard_controller/view_task');
 	}
 	
 	function another_page() // just for sample

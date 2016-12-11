@@ -427,7 +427,7 @@
   <div class="card"></div>
   <div class="card">
     <h1 class="title">Login</h1>
-    <?php echo form_open('login/validate_credentials');?>
+    <?php echo form_open('Login/validate_credentials');?>
       <div class="input-container">
         <input type="text" id="username" required="required" <?php  echo form_input('username');?>
         <label for="username">Username</label>
@@ -449,7 +449,7 @@
     <h1 class="title">Register
       <div class="close"></div>
     </h1>
-    <?php echo form_open('login/create_member');?>
+    <?php echo form_open('Login/create_member');?>
       <div class="input-container">
         <input type="text" id="firstname" required="required" <?php  echo form_input('first_name');?>
         <label for="firstname">Firstname</label>

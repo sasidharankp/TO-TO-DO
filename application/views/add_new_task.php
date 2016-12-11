@@ -1,5 +1,5 @@
 <?php 
-	echo form_open('dashboard_controller/add_task');
+	echo form_open('Dashboard_controller/add_task');
     echo form_hidden('username',$this->session->userdata('username'));
     echo form_hidden('status',1);?>
                     

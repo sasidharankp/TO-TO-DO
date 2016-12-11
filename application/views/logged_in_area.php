@@ -10,7 +10,7 @@
     
      <p>This section represents the area that only logged in members can access.</p>
    
-    <h4><?php echo anchor('dashboard_controller/view_task', 'View Task'); ?></h4>
-	<h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
+    <h4><?php echo anchor('Dashboard_controller/view_task', 'View Task'); ?></h4>
+	<h4><?php echo anchor('Login/logout', 'Logout'); ?></h4>
 </body>
 </html>	

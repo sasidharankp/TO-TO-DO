@@ -12,7 +12,7 @@
   <div class="mdl-card__supporting-text"><?php echo $description ?></div>
   <div class="mdl-card__actions mdl-card--border">
      <?php if($status==1){$sym='thumb_up';}else{$sym='thumb_down';}
-    echo form_open('dashboard_controller/status_change');
+    echo form_open('Dashboard_controller/status_change');
     echo form_hidden('uid',$uid);
     echo form_hidden('status',!($status));?>
    <button id="manage"class="mdl-button mdl-button--colored mdl-button--primary mdl-js-button mdl-js-ripple-effect"> 
@@ -21,7 +21,7 @@
         else if($status==0){echo 'MOVE TO PENDING';}?>
     </a></a></button><?php echo form_close();?>
       
-      <?php echo form_open('dashboard_controller/delete_task'); echo form_hidden('uid',$uid);?>
+      <?php echo form_open('Dashboard_controller/delete_task'); echo form_hidden('uid',$uid);?>
       <button class="mdl-button mdl-button--colored mdl-button--accent mdl-js-button mdl-js-ripple-effect del ">
           <a class="mdl-button--accent material-icons">delete_forever<a>delete</a>
     </a></button><?php echo form_close();?>
